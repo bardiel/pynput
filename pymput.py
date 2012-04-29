@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 pymput
 Version:    0.1.0
