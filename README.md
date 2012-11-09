@@ -1,8 +1,8 @@
 # pynput
 
-Version:    0.2.0
-Author:     Bardiel
-License:    Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+Version:    0.2.0  
+Author:     Bardiel  
+License:    Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.  
 
 Enables or disables a device (given it's name or ID) through xinput.
 Made in Python 2.7
@@ -12,7 +12,7 @@ It's recommended to use this program as a keyboard shortcut.
 
 ## Usage
 
-usage: pymput.py [-h] [-d DEVICE] [-i] [-I ID] [-l] [--enable] [--disable]
+    usage: pymput.py [-h] [-d DEVICE] [-i] [-I ID] [-l] [--enable] [--disable]
 
     optional arguments:
       -h, --help            show this help message and exit
@@ -27,9 +27,9 @@ usage: pymput.py [-h] [-d DEVICE] [-i] [-I ID] [-l] [--enable] [--disable]
 
 ## TODO:
 
--Fix elem.strip on line 139 (read comment)
--Migrate to Python3
--Per user configuration file under ~/.config/pynput/pynput.conf for default device name
+* Fix elem.strip on line 139 (read comment)
+* Migrate to Python3
+* Per user configuration file under ~/.config/pynput/pynput.conf for default device name
 
 ## Changelog:
 
