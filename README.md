@@ -1,6 +1,6 @@
 # pynput
 
-Version:    0.2.0  
+Version:    0.2.1  
 Author:     Bardiel  
 License:    Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.  
 
@@ -27,11 +27,15 @@ It's recommended to use this program as a keyboard shortcut.
 
 ## TODO:
 
-* Fix elem.strip on line 139 (read comment)
+* ~~Fix elem.strip on line 139 (read comment)~~
 * Migrate to Python3
 * Per user configuration file under ~/.config/pynput/pynput.conf for default device name
 
 ## Changelog:
+
+### v0.2.1
+
+* Fix elem.strip find
 
 ### v0.2.0
 

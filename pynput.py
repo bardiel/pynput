@@ -1,7 +1,7 @@
 #!/usr/bin/python2.7
 """
 pynput
-Version:    0.2.0
+Version:    0.2.1
 Author:     Bardiel
 License:    Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
@@ -25,11 +25,13 @@ optional arguments:
   --disable             Override default behavior by only disabling the device
 
 TODO: 
--Fix elem.strip on line 139 (read comment)
 -Migrate to Python3
 -Per user configuration file under ~/.config/pynput/pynput.conf for default device name
 
 Changelog:
+v0.2.1
+*Fix elem.strip find
+
 v0.2.0
 +Optional arguments using builtin lib argparse
 +find_elem_by_id(id)
@@ -136,7 +138,7 @@ elif args.disable:
 else:
     for elem in f:
         if "Device Enabled" in elem:
-            if elem.strip() == "Device Enabled (152):	0": #"(152)" is not always the same number in every machine. 
+            if ":	0" in elem:
                 enable_device(elid)
             else:
                 disable_device(elid)
